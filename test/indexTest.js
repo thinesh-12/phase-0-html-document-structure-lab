@@ -98,7 +98,7 @@ describe("index.html", () => {
         errorReport = report.results[0].messages
           .map((m) => m.message)
           .join("\n\t");
-      }
+      };
 
       expect(report.valid, `invalid HTML: \n\t${errorReport}\n\t`).to.be.true;
     });
